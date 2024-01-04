@@ -1,0 +1,24 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-300 flex justify-center items-center">
+    <div class="w-[30vw]  bg-zinc-50 px-20 py-10 rounded-[30px]">
+       <img class=" text-xs h-[48px] w-[50px] font-normal mt-2 mb-5 grayscale w-3/4 mx-auto text-center" src="/images/logo.png" alt="#">
+     <h1 class="text-2xl text-center  mt-5 font-semibold text-zinc-700 tracking-tighter capitalize leading-none" >Welcome to pinterest</h1>
+       <h3 class=" text-lg font-normal mt-2 mb-5 text-zinc-600 w-3/4 mx-auto text-center">Find new ideas to try</h3>
+     <form action="/register" method="post">
+        <label class="not-italic font-normal text-zinc-600 " for="email">Email</label>
+         <input class="border-2 rounded-md block mb-3 px-3 py-1  w-full " id="email" type="email" placeholder="Email" name="email">
+        <label class="not-italic font-normal  mt-1 text-zinc-600 " for="username">Username</label>
+         <input class="border-2 rounded-md block mb-3 px-3 py-1  w-full " id="username" type="text" placeholder="Username" name="username">
+        <label class="not-italic font-normal  mt-1 text-zinc-600 " for="fullname">Full name</label>
+         <input class="border-2 rounded-md block mb-3 px-3 py-1  w-full " id="fullname" type="text" placeholder="Full name" name="fullname">
+         <label class="not-italic font-normal mt-2  text-zinc-600 " for="password">Password</label>
+         <input class="border-2 rounded-md block mb-3 px-3 py-2  w-full " id="password" type="password" placeholder="Password" name="password">
+         <a class="mt-2 text-sm font-semibold text-zinc-700 inline-block" href="/">Forgot Password?</a>
+         <input class=" border-2 block px-3 py-2 mt-2 w-full bg-red-600 text-white rounded-full" type="submit" value="Continue">
+         <!-- <button class=" border-2 block px-3 py-2 mt-2 w-full bg-red-600 text-white rounded-full" type="submit" ><a href="/">Login</a></button> -->
+         <p class="text-xs font-semibold text-zinc-500 mt-5 w-3/4 mx-auto text-center">By continuing, you agree to Pinterest's <b class="text-zinc-800">  Terms of Service </b> and acknowledge you've read our <b class="text-zinc-800">Privacy Policy. Notice at collection</b> </p>
+       </form>
+       <a class="inline-block mt-3 text-sm font-semibold text-zinc-800 text-center w-full" href="/">Already a member? Login</a>
+    </div>
+ </div>
+<% include ./partials/footer.ejs %>
