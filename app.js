@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-// const expressSession = require("express-session");
-const expressSession = require("cookie-session")
+const expressSession = require("express-session");
+// const expressSession = require("cookie-session")
 
 const passport = require("passport")
 const flash = require("connect-flash")
